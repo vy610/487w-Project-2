@@ -1,0 +1,33 @@
+#itemContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    margin: 25px;
+    width: 200px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.item img {
+    width: 200px;  /* or any size you prefer */
+    height: 200px; /* or any size you prefer */
+    object-fit: cover;
+}
+
+.item h2 {
+    margin: 0;
+}
+
+form {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+
+form input[type="text"] {
+    text-align: left;
+    direction: ltr;
+}
+

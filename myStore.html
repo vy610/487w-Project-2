@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="myStore.css">
+    <meta charset="UTF-8">
+    <title>Online Store</title>
+</head>
+<body>
+    <h1>Online Store</h1>
+    <form id = "itemForm">
+        <h2>Add items</h2>
+        <div class = "inputBox">
+            <input type = "text" id = "name" placeholder = "item name" />
+        </div>
+
+        <div class = "inputBox">
+            <input type = "text" id = "description" placeholder = "item description" />
+        </div>
+
+        <div class = "inputBox">
+            <input type = "text" id = "price" placeholder = "item price" />
+        </div>
+
+        <div class = "inputBox">
+            <input type = "text" id = "image" placeholder = "item image" />
+        </div>
+
+        <div class = "button">
+            <button id = "submit">Submit</button>
+        </div>
+
+    </form>
+
+    <form id = "itemRemove">
+        <h2>Remove items</h2>
+        <div class = "inputBox">
+            <input type = "text" id = "id" placeholder = "type id to remove" />
+        </div>
+
+        <div class = "button">
+            <button id = "remove">Remove</button>
+        </div>
+    </form>
+
+    <form id = "itemEdit">
+        <h2>Edit items</h2>
+        <div class = "inputBox">
+            <input type = "text" id = "editItem" placeholder = "type id to edit item" />
+        </div>
+
+        <div class = "inputBox">
+            <input type = "text" id = "editName" placeholder = "edit item name" />
+        </div>
+
+        <div class = "inputBox">
+            <input type = "text" id = "editDescription" placeholder = "edit item description" />
+        </div>
+
+        <div class = "inputBox">
+            <input type = "text" id = "editPrice" placeholder = "edit item price" />
+        </div>
+
+        <div class = "inputBox">
+            <input type = "text" id = "editImage" placeholder = "edit item image" />
+        </div>
+
+        <div class = "button">
+            <button id = "edit">Edit</button>
+        </div>
+
+        <div>
+            <h3 id = "editMessage"></h3>
+        </div>
+    </form>
+
+    <form id = "searchItem">
+        <h2>Search Items</h2>
+        <div class = "inputBox">
+            <input type = "text" id = "search" placeholder = "search item" />
+        </div>
+
+        <div class = "button">
+            <button id = "searchButton">Search</button>
+        </div>
+
+    </form>
+
+    <div>
+        <h2>Sort items</h2>
+
+        <form id = "alphabeticalOrderForm">
+            <div class = "button">
+                <button id = "alphabeticalSort">Alphabetical Name</button>
+            </div>
+        </form>
+
+        <form id="alphabeticalId">
+            <div class = "button">
+                <button id = "alphabeticalIdSort">Alphabetical Id</button>
+            </div>
+        </form>
+
+    </div>
+
+    <div>
+        <h2>Reset</h2>
+        <form id="resetSearch">
+            <div class = "button">
+                <button id = "resetItems">Reset search</button>
+            </div>
+        </form>
+
+    </div>
+
+
+    <form id = "displayAll">
+        <div id = "itemContainer">
+        </div>
+    </form>
+
+
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script type="module" src="myStore.js"></script>
+</body>
+</html>
+
